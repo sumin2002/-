@@ -1,0 +1,899 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sumin2002/-/blob/main/%E3%85%87%E3%85%8A%E3%84%B7%E3%85%8A%E3%85%87%E3%85%81\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "rotPLMXg6iVv"
+      },
+      "source": [
+        "1. 정수 하나를 입력받아 그 수가 짝수인지, 홀수인지를 판별하는 프로그램을 작성하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3mqm8bWw6a1X",
+        "outputId": "4a900858-3989-43b9-b485-ec6d4b44ec20"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "정수 하나를 입력하시오:11\n",
+            "홀수\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=int(input('정수 하나를 입력하시오:'))\n",
+        "if a%2==0:\n",
+        "  print('짝수')\n",
+        "else:\n",
+        "  print('홀수')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input('정수 하나를 입력하시오:'))\n",
+        "if a%2==0:\n",
+        "  r='짝수'\n",
+        "else:\n",
+        "  r='홀수'\n",
+        "print(r)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sKAXMfZY0_DS",
+        "outputId": "597e38c2-d8b0-4187-cb59-fa364481589f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "정수 하나를 입력하시오:111\n",
+            "홀수\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wLnqsgxd6_SG"
+      },
+      "source": [
+        "2  두 정수 a, b를 입력받아 더 큰 수를 구하여 출력하는 프로그램을 작성하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TCZO1a9V7GZ1",
+        "outputId": "6e8f9cbd-d6b8-4bd4-8b15-c385b96837fd"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "두 정수를 입력하시오:3 1\n",
+            "3\n"
+          ]
+        }
+      ],
+      "source": [
+        "a,b=map(int,input('두 정수를 입력하시오:').split())\n",
+        "if a>b:\n",
+        "  print(a)\n",
+        "else:\n",
+        "  print(b)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CtlnLL8S7TBE"
+      },
+      "source": [
+        "3. 임의의 두 정수를 입력받아 큰수에서 작은 수를 뺀 결과와 나눈 결과를 출력하는 프로그램을 작성하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z6S1pQVH7eue",
+        "outputId": "ba722df1-60e3-4bbb-9375-78981912c9bd"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "두 정수를 입력하시오:5 2\n",
+            "3 2.5\n"
+          ]
+        }
+      ],
+      "source": [
+        "a,b=map(int,input('두 정수를 입력하시오:').split())\n",
+        "if a>b:\n",
+        "  print(a-b,a/b)\n",
+        "else:\n",
+        "  print(b-a,b/a)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sfRBaK687sAp"
+      },
+      "source": [
+        "4. 임의의 정수 a를 입력받아 1~10 범위의 수이면 “OK\"를, 그렇지 않으면 ”NOK\"를 출력하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VKFTpYMp7z9z",
+        "outputId": "e999efa2-650f-45c2-f0a0-413630b8f6bf"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "정수를 입력하시오:15\n",
+            "NOK\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=int(input('정수를 입력하시오:'))\n",
+        "if 1<=a<=10:\n",
+        "  print('OK')\n",
+        "else:\n",
+        "  print('NOK')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sFjJApRc8BQo"
+      },
+      "source": [
+        "5. 임의의 정수 a를 입력받아 1이하이거나 10 이상의 수이면 “OK\"를, 그렇지 않으면 ”NOK\"를 출력."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qtP_Sjlg8JSb",
+        "outputId": "35f77f59-ad86-433e-e243-c7e874ce2ed6"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "정수를 입력하시오:8\n",
+            "NOK\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=int(input('정수를 입력하시오:'))\n",
+        "if a<=1 or a>=10:\n",
+        "  print('OK')\n",
+        "else:\n",
+        "  print('NOK')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Bej13cvb8lxD"
+      },
+      "source": [
+        "6. 입력된 실수가 [1~10) 사이이면 입력값의 2배 값을 출력하고, 그렇지 않으면 3배 값을 출력하는 프로그램을 작성하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qdqf7dnU9oXo",
+        "outputId": "edb9b5ed-2d52-4f07-f910-346fc81e48d7"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "실수를 입력하시오:11\n",
+            "33.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=float(input('실수를 입력하시오:'))\n",
+        "if 1<=a<10:\n",
+        "  print(2*a)\n",
+        "else:\n",
+        "  print(3*a)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "C9lUppSK-McU"
+      },
+      "source": [
+        "7. 임의의 문자를 입력받아 그 문자가 대문자인지 아닌지를 판별하는 프로그램을 작성하시오. "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dHM8EFBM-RKy",
+        "outputId": "ddf878a2-504e-4513-8ca2-8de1a2ab12cf"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "문자를 입력하시오:d\n",
+            "대문자가 아니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=str(input('문자를 입력하시오:'))\n",
+        "if 'A'<=a<='Z':\n",
+        "  print('대문자')\n",
+        "else:\n",
+        "  print('대문자가 아니다.')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3DE5nkuP-hEU"
+      },
+      "source": [
+        "8. 임의의 문자 ch를 입력받아 그 문자가 'y' 또는 'Y' 또는 개행문자(‘\\n')이면 “OK\"를, 그렇지 않으면 ”NOK\"를 출력하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Or8A3N55-q3M",
+        "outputId": "a5a384f2-4f34-412c-de43-d700e21c6026"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "문자를 입력하시오:|n\n",
+            "OK\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=str(input('문자를 입력하시오:'))\n",
+        "if a=='y' or a=='Y' or a=='|n':\n",
+        "  print('OK')\n",
+        "else:\n",
+        "  print('NOK')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=str(input('문자를 입력하시오:'))\n",
+        "if a=='y' or a=='Y' or a==' ':\n",
+        "  print('OK')\n",
+        "else:\n",
+        "  print('NOK')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qwCHwcp82Ppn",
+        "outputId": "f0ebd0d3-4deb-40ae-dab8-394941405874"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "문자를 입력하시오:\n",
+            "NOK\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ksbTPyNMBNkX"
+      },
+      "source": [
+        "9. 임의의 문자를 입력받아 대문자인지, 소문자인지, 기타의 문자인지를 판별하는 프로그램을 작성하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YIDqtbTdBW2B",
+        "outputId": "16892e03-edc5-4a04-df38-1f26274bf945"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "문자를 입력하시오:ㅇ\n",
+            "기타\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=str(input('문자를 입력하시오:'))\n",
+        "if 'A'<=a<='Z':\n",
+        "  print('대문자')\n",
+        "elif 'a'<=a<='z':\n",
+        "  print('소문자')\n",
+        "else:\n",
+        "  print('기타')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TVmghY78Bp_H"
+      },
+      "source": [
+        "10. 임의의 정수 a를 입력받아 [1..10] 범위의 수가 아니면 “ERROR\"를 출력하고, 1~10 범위의 수이지만 3의 배수가 아니면 “OK\"를, 그렇지 않으면 ”NOK\"를 출력하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NzEQcWRHB3TD",
+        "outputId": "c27b8555-5ad6-4d89-dee3-2cb93f3da009"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "정수를 입력하시오:3\n",
+            "NOK\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=int(input('정수를 입력하시오:'))\n",
+        "if not 1<=a<=10:\n",
+        "  print('ERROR')\n",
+        "elif 1<=a<=10 and a%3!=0:\n",
+        "  print('OK')\n",
+        "else: \n",
+        "  print('NOK')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LbqXfDOSCJ-r"
+      },
+      "source": [
+        "11. 임의의 양의 정수 n을 입력받아 1에서 n까지의 합을 구하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8P_2k1N7COky",
+        "outputId": "636255ae-e867-4d10-d2db-457a8ea67371"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "정수를 입력하시오:10\n",
+            "55\n"
+          ]
+        }
+      ],
+      "source": [
+        "n=int(input('정수를 입력하시오:'))\n",
+        "sum=0\n",
+        "for i in range(1,n+1):\n",
+        "  sum+=i\n",
+        "print(sum)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RdW-WWrsCnvb"
+      },
+      "source": [
+        "12. 임의의 양의 정수 n을 입력받아 n!을 구하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yuYWdDxpCsRH",
+        "outputId": "cead4ded-b1d7-4724-93d1-c858ccf0dea6"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "정수를 입력하시오:5\n",
+            "5 !은 120 입니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "n=int(input('정수를 입력하시오:'))\n",
+        "a=1\n",
+        "for i in range(1,n+1):\n",
+        "  a*=i\n",
+        "print(n,'!은',a,'입니다.')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2VE1ziAaDwKd"
+      },
+      "source": [
+        "13. 두 정수 a, b를 입력받아 [a, b] 사이의 홀수의 개수와 합을 구하는 프로그램을 작성하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z_sAaLHJD2jK",
+        "outputId": "c42168f2-9559-46a0-d4db-caba6a70994f"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "a,b의 정수를 입력하시오:2 12\n",
+            "홀수의 개수: 5 홀수의 합: 35\n"
+          ]
+        }
+      ],
+      "source": [
+        "a,b=map(int,input('a,b의 정수를 입력하시오:').split())\n",
+        "sum=0\n",
+        "count=0\n",
+        "for i in range(a,b+1):\n",
+        "  if i%2==1:\n",
+        "    sum+=i\n",
+        "    count+=1\n",
+        "print('홀수의 개수:',count,'홀수의 합:',sum)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "WNsm4YUfEWCK"
+      },
+      "source": [
+        "14. 100 이하의 자연수중 3의 배수이거나 5의 배수이면서 15의 배수가 아닌 수들의 합을 구하시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JDxKTNa5EeYO",
+        "outputId": "3a79dc69-37f8-4008-9d4b-e7099692b6d5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2103\n"
+          ]
+        }
+      ],
+      "source": [
+        "sum=0\n",
+        "for i in range(1,101):\n",
+        "  if (i%3==0 or i%5==0) and i%15!=0:\n",
+        "    sum+=i\n",
+        "print(sum)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yyOy7HYGErbS"
+      },
+      "source": [
+        "15. 100 이하의 임의의 양의 정수 n을 입력받아 1~100 사이에서 n의 배수와 n의 배수의 개수를 출력하시오.\n",
+        "예> 양의 정수를 입력하시오 : 15\n",
+        "    15의 배수 : 15, 30, 45, 60, 75, 90\n",
+        "    15의 배수의 개수 : 6\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GIHOaGQDGUv4"
+      },
+      "source": [
+        "*end: 출력값을 따로 구하더라도 이어서 출력"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9muts1v5EyIo",
+        "outputId": "23729a67-b765-493f-be2c-ee8eac419bf1"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "양의 정수를 입력하시오:15\n",
+            "15 의 배수:15, 30, 45, 60, 75, 90, \n",
+            "15 의 배수의 개수: 6\n"
+          ]
+        }
+      ],
+      "source": [
+        "n=int(input('양의 정수를 입력하시오:'))\n",
+        "count=0\n",
+        "print(n,'의 배수:',end='')\n",
+        "for i in range(1,101):\n",
+        "  if i%n==0:\n",
+        "    count+=1\n",
+        "    print(i, end=', ')\n",
+        "print()\n",
+        "print(n,'의 배수의 개수:',count)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gcejdlSXG-xY"
+      },
+      "source": [
+        "16.1+2-3+4+5-6+7+8-9+...-99+100=?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Z_dZajgHOwn",
+        "outputId": "b8313ec8-de87-4648-b7b9-b7884088df85"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "1684\n"
+          ]
+        }
+      ],
+      "source": [
+        "sum=0\n",
+        "for i in range(1,101):\n",
+        "  if i%3==0:\n",
+        "    sum-=i\n",
+        "  else:\n",
+        "    sum+=i\n",
+        "print(sum)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ncQuDaqlHX1s"
+      },
+      "source": [
+        "17. 1+(1+2)+(1+2+3)+...+(1+2+3+...+100)=?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yFRMxb9ZHfBZ",
+        "outputId": "ea730150-2158-4abf-a88b-cf5ea0b1adba"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "171700\n"
+          ]
+        }
+      ],
+      "source": [
+        "sum=0\n",
+        "for x in range(1,101):\n",
+        "  for i in range(x+1):\n",
+        "    sum+=i\n",
+        "print(sum)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JKjDEL9nITa_"
+      },
+      "source": [
+        "18. 5명의 학생에 대한 번호, 중간 기말 점수를 정수 값으로 입력받아 총점, 평균(소수 둘째자리까지), 학점을 구하여 출력하시오. 평균이 같은 학생은 없다고 가정."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5tI-WpY5JBij"
+      },
+      "source": [
+        "*round 함수를 이용해 반올림함."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "8RfQSnkLIYDc"
+      },
+      "outputs": [],
+      "source": [
+        "for i in range(1,6):\n",
+        "  a,b,c=map(int,input('번호, 중간, 기말 점수를 입력하시오:').split(', '))\n",
+        "  x=b+c\n",
+        "  y=x/2\n",
+        "  print(f'{a}번의 총점은{round(x,2)}이고, 평균은 {round(y,2)}이다.')\n",
+        "  if 90<=y<=100:\n",
+        "    print('학점:A')\n",
+        "  elif 80<=y<90:\n",
+        "    print('학점:B')\n",
+        "  elif 70<=y<80:\n",
+        "    print('학점:C')\n",
+        "  elif 60<=y<70:\n",
+        "    print('학점:D')\n",
+        "  else:\n",
+        "    print('학점:F')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xtSPHXWjJLu6"
+      },
+      "source": [
+        "19. 하나의 점수를 입력받아 출력하시오. 단, 입력된 점수가 [0,100] 범위를 벗어나면 재입력 받으시오."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true,
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "icMxVRguJtnP",
+        "outputId": "fc0faca0-a1a6-4934-85b7-89a919a56b73"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "재입력하시오.\n"
+          ]
+        }
+      ],
+      "source": [
+        "n=int(input('점수를 입력하시오:'))\n",
+        "for i in range(n+1):\n",
+        "  if 0<=n<=100:\n",
+        "    print(n)\n",
+        "    break\n",
+        "  else:\n",
+        "    print('재입력하시오.')\n",
+        "    n=int(input('점수를 입력하시오:'))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input('점수를 입력하시오:'))\n",
+        "for i in range(n+1):\n",
+        "  if 0<=n<=100:\n",
+        "    print(n)\n",
+        "    break\n",
+        "  else:\n",
+        "    print('재입력하시오.')\n",
+        "    print(n)"
+      ],
+      "metadata": {
+        "id": "uMGfHuHN-jfV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "VpYevfWNOBiV"
+      },
+      "outputs": [],
+      "source": [
+        "n=int(input('점수를 입력하시오:'))\n",
+        "if 0<=n<=100:\n",
+        "  print(n)\n",
+        "  break\n",
+        "else:\n",
+        "  print('재입력하시오.')\n",
+        "  conti"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input('정수를 입력하시오:'))\n",
+        "for i in range(2,a):\n",
+        "  if a%i!=0 :\n",
+        "   print('소수')\n",
+        "  else:\n",
+        "   print('소수가 아닙니다.')"
+      ],
+      "metadata": {
+        "id": "O0VCEVUo0Vvu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "⁰⁰a=int(input())\n",
+        "b=0\n",
+        "for i in range(1,a+1):\n",
+        "    if a%i==0 or a%i==1:\n",
+        "       b=b+1"
+      ],
+      "metadata": {
+        "id": "UFxY7uMBGDHB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input())"
+      ],
+      "metadata": {
+        "id": "slPEcQ4GHtDV"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPNTq3l0iB6GNkA4A9SQEk6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
